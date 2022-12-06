@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Lift Simulation</title>
+  </head>
+  <body>
+    <div class="formPage">
+      <div class="main-box">
+        <div class="header-box">
+          <h1 class="header-text">Weclome To Lift Simulator</h1>
+        </div>
+      </div>
+      <div class="form-box">
+        <form class="input-form" id="inputForm" name="inputForm">
+          <div class="floor-box inputBoxes">
+            <label for="floor">Enter a Number of Floor:</label>
+            <input
+              id="floorInput"
+              type="number"
+              placeholder="Enter a Number of Floor's"
+              name="floor"
+              class="inputBox"
+            />
+            <h6
+              class="floor-error-message errorMessages"
+              id="floorErrorMessage"
+            ></h6>
+          </div>
+          <div class="lift-box inputBoxes">
+            <label for="lift">Enter a Number of Lift's:</label>
+            <input
+              id="liftInput"
+              type="number"
+              placeholder="Enter a Number of Lifit's"
+              name="lift"
+              class="inputBox"
+            />
+            <h6
+              class="lift-error-message errorMessages"
+              id="liftErrorMessage"
+            ></h6>
+          </div>
+          <div class="submit-btn-box">
+            <button class="submit-btn" type="button" id="startBtn">
+              Let's Start
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./js/Form.js"></script>
+</html>

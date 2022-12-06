@@ -1,0 +1,137 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.floors,.lifts,.building{
+    height: 90vh;
+    width: 90vw;
+}
+
+.building {
+    margin-top: 10px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.floors,.lifts {
+    position: absolute;
+    display: flex;
+}
+
+.floors {
+    background-color: transparent;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: flex-end;
+}
+
+
+.lifts {
+    background-color:transparent; 
+    justify-content: space-around;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.floor {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 0.5px dotted white;
+}
+
+.lift {
+    width: 6vh;
+    outline: 0.5px solid white;
+}
+
+.navigationBtn {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    z-index: 5;
+    height: 100%;
+}
+
+.liftDoor {
+    height: 100%;
+    width: 100%;
+    background-color: #c7bfbf;
+}
+
+.navigationBtn{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floorBtn {
+    padding: 5px;
+    border-radius: 50%;
+    font-size: x-large;
+    margin: 1px;
+    height: 3vh;
+    width: 3vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.floor-title {
+        flex-grow: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: lighter;
+        color: white;
+}
+
+.formPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+
+.inputBoxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBoxes label{
+font-size: x-large;
+} 
+
+.inputBox {
+    background: black;
+    border: none;
+    border-bottom: 3px solid white;
+    padding: 10px;
+    outline: none;
+    color: white;
+    font-size: large;
+}
+
+.errorMessages{
+    color: red;
+    font-size: inherit;
+}
+
+.submit-btn {
+    font-size: x-large;
+}
